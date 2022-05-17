@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sibling and decending selector</title>
+        <style>
+            body{
+                background-image: url(https://img.freepik.com/free-vector/spring-flower-frame-background-with-watercolor_65186-2528.jpg?w=2000);
+            }
+            h1{
+                text-decoration:underline;
+                text-align:center;
+                background-color:lightcoral;
+
+            }
+            h1:hover{
+                background-color:#fff;
+            }
+            h1 samp{
+                color:red;
+                font-size: 2em;
+            }
+            h1 > samp:hover{
+                color:#000;
+            }
+            div,p{
+                font-size: 2em;
+                text-align:center;
+                background-color:lightblue
+            }
+            div+div:hover{
+                color:darkmagenta;
+                background-color:pink
+            }
+            div~p:hover{
+                color:red;
+                background-color:lightslategrey
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1><i>hello welcome to</i>
+            <samp>sibling selector</samp>
+        </h1>
+        <div>sibling selector  is a combinator selector,</div>
+        <div><br>there are two types of selector. </div>
+        <p>1. adjacent selector +</p>
+        <p>2. genaral selector ~</p>
+        
+
+    </body>
+</html>
